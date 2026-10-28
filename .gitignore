@@ -1,0 +1,46 @@
+# Environnement
+.env
+.env.local
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Base de données locale
+db.sqlite3
+db.sqlite3-journal
+
+# Tests et couverture
+.pytest_cache/
+.coverage
+.coverage.*
+coverage.xml
+
+# Outils
+.ruff_cache/
+.mypy_cache/
+
+# Django
+staticfiles/
+media/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Système
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

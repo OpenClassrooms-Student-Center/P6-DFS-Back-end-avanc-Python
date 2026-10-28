@@ -1,0 +1,23 @@
+[project]
+name = "norlys-mobilite"
+version = "1.4.2"
+description = "Application interne de gestion des stations, véhicules et agents de terrain de Norlys Mobilité"
+requires-python = ">=3.14"
+
+[tool.black]
+line-length = 100
+extend-exclude = "migrations"
+
+[tool.ruff]
+line-length = 100
+extend-exclude = ["*/migrations/*", ".venv"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "norlys_mobilite.settings"
+
+[tool.coverage.run]
+source = ["agents", "stations", "vehicles", "core"]
+omit = ["*/migrations/*", "*/tests/*"]
